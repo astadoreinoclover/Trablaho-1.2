@@ -1,0 +1,114 @@
+.inicial {
+    background-image: url('../img/inicial.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-init {
+    font-size: 3vw;
+    padding: 0.7vw 5vw;
+    background-color: rgb(48, 48, 182);
+    color: #eee;
+    opacity: 0.5;
+}
+
+.btn-init:hover {
+    color: #eee;
+    background-color: rgb(48, 48, 182);
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.fundo {
+    background-image: url('../img/fundo1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.batalha {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 100%;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoProta {
+    width: 7vw;
+}
+
+.fotoM {
+    width: auto;
+    height: 328px;
+}
+
+.table {
+    width: 300px;
+}
+
+.monstro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-over {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(220, 0, 0, 0.378);
+    z-index: 999;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    flex-direction: column;
+}
+
+.btn-over {
+    font-size: 3vw;
+    padding: 0.7vw 5vw;
+    background-color: rgb(198, 77, 77);
+    color: #eee;
+    opacity: 0.5;
+    display: inline-flex;
+}
+
+.btn-over:hover {
+    color: #eee;
+    background-color: rgb(131, 18, 18);
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.item{
+    max-width: 50%;
+}
+
+.shake {
+    animation: shake 1.5s;
+    background-color: rgba(220, 0, 0, 0.378);
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
